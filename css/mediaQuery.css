@@ -1,0 +1,39 @@
+@media screen and (max-width: 600px) 
+{
+  #titulo {
+   font-size: 20px;
+   padding: 0px;
+   margin: 0px;
+  }
+  #icone {
+    margin-top: 23%;
+  }
+  .section-gallery img {
+    margin-bottom: 3%;
+  }
+}
+
+@media screen and (max-width: 374px) 
+{
+  #titulo {
+   font-size: 15px;
+   padding: 0px;
+   margin: 0px;
+  }
+  #icone {
+    margin-top: 23%;
+  }
+}
+
+@media screen and (max-width: 309px) 
+{
+  #titulo {
+   font-size: 13px;
+   padding: 0px;
+   margin: 0px;
+  }
+  #icone {
+    margin-top: 23%;
+  }
+}
+

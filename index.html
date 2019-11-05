@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <link type="text/css" rel="stylesheet" href="./css/materialize/materialize.min.css"  media="screen,projection"/>
+      <link rel="stylesheet" href="./css/mediaQuery.css">
+      <link rel="stylesheet" href="./css/estilos.css">
+      <link rel="icon" href="./imgs/logo.png">
+      <script src="https://kit.fontawesome.com/f476c5939a.js" crossorigin="anonymous"></script>
+      <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+      <script src="./js/acao.js"></script>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <title>NCEx</title>
+  </head>
+  <body>
+    <!-- inicio navbar -->
+    <div class="navbar-fixed">
+      <nav class="grey darken-3">
+        <div class="container">
+          <div class="nav-wrapper">
+            <!-- titulo -->
+            <a href="#home" id="titulo" class="brand-logo">
+              <i class="fas fa-comment-medical" id="icone"></i>
+              NCEx 
+            </a> 
+            <!-- icone de menu responsivo -->
+            <a href="#" data-target="mobile-nav" class="sidenav-trigger">
+              <i class="material-icons white-text">menu</i>
+            </a>
+            <!-- opções do menu -->
+            <ul class="right hide-on-med-and-down">
+              <li>
+                <a href="#operacoes">
+                  <i class="fab fa-buffer"></i>
+                  Operações
+                </a>
+              </li>
+              <li>
+                <a href="#chamados">
+                  <i class="fas fa-cogs"></i>
+                  Chamados
+                </a>
+              </li>
+              <li>
+                <a href="#produtos">
+                  <i class="fas fa-shopping-bag"></i>
+                  Produtos
+                </a>
+              </li>
+              <li>
+                <a href="#MMKBS">
+                  <i class="fas fa-clipboard-list"></i>
+                  MMKBS
+                </a>
+              </li>
+              <li>
+                <a href="#pd">
+                  <i class="fas fa-hammer"></i>
+                  Projetos e Demandas
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <!-- fim navbar -->
+    <!-- inicio menu lateral -->
+    <ul class="sidenav" id="mobile-nav">
+      <li>
+        <a class="sidenav-close center" href="#!" style="font-size: 20px; background-color: #212121;">
+          <strong style="color: #e64a19; float: right;">X</strong>
+        </a>
+      </li>
+      <li>
+        <a href="#operacoes">
+          <i class="fab fa-buffer"></i>
+          Operações
+        </a>
+      </li>
+      <li>
+        <a href="#chamados">
+          <i class="fas fa-cogs"></i>
+          Chamados
+        </a>
+      </li>
+      <li>
+        <a href="#produtos">
+          <i class="fas fa-shopping-bag"></i>
+          Produtos
+        </a>
+      </li>
+      <li>
+        <a href="#MMKBS">
+          <i class="fas fa-clipboard-list"></i>
+          MMKBS
+        </a>
+      </li>
+      <li>
+        <a href="#pd">
+          <i class="fas fa-hammer"></i>
+          Projetos e Demandas
+        </a>
+      </li>
+    </ul>
+    <!-- fim menu lateral -->
+    <!-- inicio Section: Listagem de Chamados -->
+      <section class="section section-chamados center">
+        <div class="container">
+          <div class="row">
+            <div class="col s12 m6">         
+              <h4><i class="fas fa-cogs"></i> Chamados</h4><br><br>
+              <div class="input-field col s12">
+                  <select>
+                    <option value="" disabled selected>Selecione um filtro:</option>
+                    <option value="1">Protocolo</option>
+                    <option value="2">Responsável</option>
+                    <option value="3">Status</option>
+                    <option value="4">Data de Abertura</option>
+                    <option value="5">Data de Fechamento</option>
+                  </select>
+                  <label>Filtrar chamados por:</label>
+              </div>   
+            </div>
+            <div class="col s12 m6 adicionar">
+              <a class="btn-floating btn-large waves-effect waves-light green tooltipped" data-tooltip="Abrir Chamado!" data-position="top">
+                  <i class="material-icons white-text">add</i>
+              </a>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col s12">
+              <table class="responsive-table">
+                <thead>
+                  <tr>
+                      <th>Número de Protocolo</th>
+                      <th>Funcionário Responsável</th>
+                      <th>Status</th>
+                      <th>Data de Abertura</th>
+                      <th>Data de Fechamento</th>
+                      <th>Ações</th>
+                  </tr>
+                </thead>
+        
+                <tbody>
+                  <tr>
+                    <td>9903449</td>
+                    <td>Sillas</td>
+                    <td>ABERTO</td>
+                    <td>02/11/2019</td>
+                    <td>---</td>
+                    <td>
+                      <a class="btn-floating btn-small waves-effect waves-light blue">
+                        <i class="fas fa-eye fa-sm white-text tooltipped" data-tooltip="Visualizar" data-position="top"></i>
+                      </a>
+                      <a class="btn-floating btn-small waves-effect waves-light green">
+                        <i class="fas fa-share white-text tooltipped" data-tooltip="Encaminhar" data-position="top"></i>
+                      </a>
+                      <a class="btn-floating btn-small waves-effect waves-light grey">
+                        <i class="fas fa-pen white-text tooltipped" data-tooltip="Editar" data-position="top"></i>
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>8615454</td>
+                    <td>Renata</td>
+                    <td>EM ATENDIMENTO</td>
+                    <td>05/11/2019</td>
+                    <td>---</td>
+                    <td>
+                      <a class="btn-floating btn-small waves-effect waves-light blue">
+                        <i class="fas fa-eye fa-sm white-text tooltipped" data-tooltip="Visualizar" data-position="top"></i>
+                      </a>
+                      <a class="btn-floating btn-small waves-effect waves-light green">
+                        <i class="fas fa-share white-text tooltipped" data-tooltip="Encaminhar" data-position="top"></i>
+                      </a>
+                      <a class="btn-floating btn-small waves-effect waves-light grey">
+                        <i class="fas fa-pen white-text tooltipped" data-tooltip="Editar" data-position="top"></i>
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>5116502</td>
+                    <td>Paulo</td>
+                    <td>ABERTO</td>
+                    <td>29/10/2019</td>
+                    <td>---</td>
+                    <td>
+                      <a class="btn-floating btn-small waves-effect waves-light blue">
+                        <i class="fas fa-eye fa-sm white-text tooltipped" data-tooltip="Visualizar" data-position="top"></i>
+                      </a>
+                      <a class="btn-floating btn-small waves-effect waves-light green">
+                        <i class="fas fa-share white-text tooltipped" data-tooltip="Encaminhar" data-position="top"></i>
+                      </a>
+                      <a class="btn-floating btn-small waves-effect waves-light grey">
+                        <i class="fas fa-pen white-text tooltipped" data-tooltip="Editar" data-position="top"></i>
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>1890482</td>
+                    <td>Rafael</td>
+                    <td>FINALIZADO</td>
+                    <td>12/10/2019</td>
+                    <td>03/11/2019</td>
+                    <td>
+                      <a class="btn-floating btn-small waves-effect waves-light blue">
+                        <i class="fas fa-eye fa-sm white-text tooltipped" data-tooltip="Visualizar" data-position="top"></i>
+                      </a>
+                      <a class="btn-floating btn-small waves-effect waves-light green disabled">
+                        <i class="fas fa-share white-text tooltipped" data-tooltip="Encaminhar" data-position="top"></i>
+                      </a>
+                      <a class="btn-floating btn-small waves-effect waves-light grey disabled">
+                        <i class="fas fa-pen white-text tooltipped" data-tooltip="Editar" data-position="top"></i>
+                      </a>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </section>
+    <!-- fim Section: Section: Listagem de Chamados-->
+
+    <script type="text/javascript" src="./js/materialize/materialize.min.js"></script>
+  </body>
+</html>
