@@ -9,3 +9,50 @@ i {
   margin-top: 30%;
   position: relative;
 }
+
+.tam14 {
+  font-size: 14px;
+}
+
+
+.dropdown-content li a{
+  color: #e64a19 !important;
+}
+
+.row .input-field input:focus {
+  border-bottom: 1px solid #e64a19 !important;
+  box-shadow: 0 1px 0 0 #e64a19 !important
+}
+
+.input-field input:focus + label {
+  color: #e64a19 !important;
+}
+
+.datepicker-date-display {
+  background-color: #424242;
+  color: #e64a19 !important;
+}
+
+.datepicker-day-button:focus {
+  color: black !important;
+  background-color: #e64a19;
+}
+
+.datepicker-done,
+.datepicker-cancel,
+.select-dropdown li>span,
+.is-today {
+  color: #424242 !important;
+}
+
+td.is-selected,
+.month-prev:active,
+.month-prev:focus,
+.month-next:active,
+.month-next:focus {
+  background-color: #e64a19 !important;
+}
+
+td.is-selected.is-today {
+  color: white !important;
+}

@@ -10,64 +10,36 @@ $(document).ready(function(){
     transition: 500
   });
   //tooltip
-  $(document).ready(function(){
-    $('.tooltipped').tooltip();
-  });
+  $('.tooltipped').tooltip();
   //select
-  $(document).ready(function(){
-    $('select').formSelect();
-  });
+  $('select').formSelect();
+  //dropdown
+  $('.dropdown-trigger').dropdown();
   //material box
-  $(document).ready(function(){
-    $('.materialboxed').materialbox();
-  });
+  $('.materialboxed').materialbox();
   //scrollspy
-  $(document).ready(function(){
-    $('.scrollspy').scrollSpy();
-  });
-  // autocomplete
-  $('input.autocomplete').autocomplete({
-    data: {
-      "São Miguel dos Milagres": null,
-      "Litoral Norte de Alagoas": null,
-      "Jericoacoara (Jijoca de Jericoacoara)": null,
-      "Porto de Galinhas": null,
-      "Ipojuca": null,
-      "Fernando de Noronha": null,
-      "Búzios": null,
-      "Região dos Lagos": null,
-      "Gramado": null,
-      "Chapada dos Veadeiros": null,
-      "Morro de São Paulo": null,
-      "Pipa": null,
-      "Lençóis Maranhenses": null,
-      "França": null,
-      "Estados Unidos": null,
-      "Espanha": null,
-      "China": null,
-      "Itália": null,
-      "Turquia": null,
-      "Alemanha": null,
-      "Reino Unido": null,
-      "Tailândia": null,
-      "Foz do Iguaçu": null,
-      "Porto Seguro": null,
-      "Florianópolis": null,
-      "Ouro Preto": null,
-      "São Paulo": null,
-      "Vitória": null,
-      "Belo Horizonte": null,
-      "Maceió": null,
-      "São Luís": null,
-      "Brasília": null,
-      "Manaus": null,
-      "Olinda": null,
-      "Lençóis": null,
-      "Canela": null,
-      "Cabo Frio": null,
-      "New York": null,
-      "Cancun": null,
-      "Aruba": null
+  $('.scrollspy').scrollSpy();
+  //datepicker
+  $('.datepicker').datepicker({
+    i18n: {
+    months: ['Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho', 'Julho', 'Agosto', 'Setembro', 'Outubro', 'Novembro', 'Dezembro'],
+    monthsShort: ['Jan', 'Fev', 'Mar', 'Abr', 'Mai', 'Jun', 'Jul', 'Ago', 'Set', 'Out', 'Nov', 'Dez'],
+    weekdays: ['Domingo', 'Segunda', 'Terça', 'Quarta', 'Quinta', 'Sexta', 'Sabádo'],
+    weekdaysShort: ['Dom', 'Seg', 'Ter', 'Qua', 'Qui', 'Sex', 'Sab'],
+    weekdaysAbbrev: ['D', 'S', 'T', 'Q', 'Q', 'S', 'S'],
+    today: 'Hoje',
+    clear: 'Limpar',
+    cancel: 'Sair',
+    done: 'Confirmar',
+    labelMonthNext: 'Próximo mês',
+    labelMonthPrev: 'Mês anterior',
+    labelMonthSelect: 'Selecione um mês',
+    labelYearSelect: 'Selecione um ano',
+    selectMonths: true,
+    selectYears: 15,
     },
+    format: 'dd mmmm, yy',
+    container: 'body',
+    minDate: new Date(),
   });
 });

@@ -28,36 +28,55 @@
               <i class="material-icons white-text">menu</i>
             </a>
             <!-- opções do menu -->
-            <ul class="right hide-on-med-and-down">
+            <ul class="right hide-on-med-and-down" >
               <li>
-                <a href="#operacoes">
-                  <i class="fab fa-buffer"></i>
+                <a href="#operacoes" class="tam14">
+                  <i class="fab fa-buffer tam14"></i>
                   Operações
                 </a>
               </li>
               <li>
-                <a href="#chamados">
-                  <i class="fas fa-cogs"></i>
+                <a href="#chamados" class="tam14">
+                  <i class="fas fa-cogs tam14"></i>
                   Chamados
                 </a>
               </li>
               <li>
-                <a href="#produtos">
-                  <i class="fas fa-shopping-bag"></i>
+                <a href="#produtos" class="tam14">
+                  <i class="fas fa-shopping-bag tam14"></i>
                   Produtos
                 </a>
               </li>
               <li>
-                <a href="#MMKBS">
-                  <i class="fas fa-clipboard-list"></i>
+                <a href="#MMKBS" class="tam14">
+                  <i class="fas fa-clipboard-list tam14"></i>
                   MMKBS
                 </a>
               </li>
-              <li>
-                <a href="#pd">
-                  <i class="fas fa-hammer"></i>
-                  Projetos e Demandas
+              <li class="active">
+                  <!-- <div class="chip">
+                      <img src="images/yuna.jpg" alt="Contact Person">
+                      Jane Doe
+                    </div> -->
+                <a href="#user" class="dropdown-trigger" data-target='dropdown1'>
+                  Colaborador: <strong>Sillas Vinícius</strong> 
+                  &nbsp;<i class="fas fa-chevron-down tam14"></i>
                 </a>
+
+                <ul id='dropdown1' class='dropdown-content'>
+                  <li>
+                    <a href="#aterarPerfil" style="font-size: 12px;">
+                      Alterar dados do Perfil
+                      <i class="fas fa-edit tam14 center"></i>
+                    </a>            
+                  </li>
+                  <li>
+                    <a href="#sair">
+                      Sair
+                      <i class="fas fa-sign-out-alt tam14 center"></i>
+                    </a>            
+                  </li>                   
+                </ul>
               </li>
             </ul>
           </div>
@@ -71,6 +90,27 @@
         <a class="sidenav-close center" href="#!" style="font-size: 20px; background-color: #212121;">
           <strong style="color: #e64a19; float: right;">X</strong>
         </a>
+      </li>
+      <li class="active">
+        <a href="#user" class="dropdown-trigger" data-target='dropdown2'>
+          Colaborador: <strong>Sillas Vinícius</strong> 
+          &nbsp;<i class="fas fa-chevron-down tam14"></i>
+        </a>
+
+        <ul id='dropdown2' class='dropdown-content'>
+          <li>
+            <a href="#aterarPerfil" style="font-size: 12px;">
+              Alterar dados do Perfil
+              <i class="fas fa-edit tam14 center"></i>
+            </a>            
+          </li>
+          <li>
+            <a href="#sair">
+              Sair
+              <i class="fas fa-sign-out-alt tam14 center"></i>
+            </a>            
+          </li>                   
+        </ul>
       </li>
       <li>
         <a href="#operacoes">
@@ -108,33 +148,59 @@
       <section class="section section-chamados center">
         <div class="container">
           <div class="row">
-            <div class="col s12 m6">         
+            <div class="col s12">         
               <h4><i class="fas fa-cogs"></i> Chamados</h4><br><br>
-              <div class="input-field col s12">
-                  <select>
-                    <option value="" disabled selected>Selecione um filtro:</option>
-                    <option value="1">Protocolo</option>
-                    <option value="2">Responsável</option>
-                    <option value="3">Status</option>
-                    <option value="4">Data de Abertura</option>
-                    <option value="5">Data de Fechamento</option>
-                  </select>
-                  <label>Filtrar chamados por:</label>
-              </div>   
-            </div>
-            <div class="col s12 m6 adicionar">
-              <a class="btn-floating btn-large waves-effect waves-light green tooltipped" data-tooltip="Abrir Chamado!" data-position="top">
-                  <i class="material-icons white-text">add</i>
-              </a>
+              <div id="filtros">
+                <div class="card-panel grey darken-3">
+                  <h5 class="white-text">Filtros:</h5>
+                  <div class="row">
+                    <div class="col s6">
+                      <div class="input-field">
+                          <input id="nome" type="number" class="validate">
+                          <label for="nome">Protocolo</label>
+                      </div>
+                      <div class="input-field">
+                        <select>
+                          <option value="" disabled selected>Status</option>
+                          <option value="1">ABERTO</option>
+                          <option value="2">EM ANDAMENTO</option>
+                          <option value="3">FINALIZADO</option>
+                        </select>
+                        <div class="input-field">
+                            <input id="dtaFechamento" type="text" class="datepicker">
+                            <label for="dtaFechamento">Dta. Fechamento</label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col s6">
+                      <div class="input-field">
+                          <input id="funcionario" type="text" class="validate">
+                          <label for="funcionario">Funcionário</label>
+                      </div>
+                      <div class="input-field">
+                          <input id="dtaAbertura" type="text" class="datepicker">
+                          <label for="dtaAbertura">Dta. Abertura</label>
+                      </div>
+                    </div>
+                  </div>
+                  <button class="btn waves-effect deep-orange darken-2 black-text" type="submit" name="action">Filtar
+                  </button>
+                  <button class="btn waves-effect grey lighten-4 black-text" type="reset" name="action">Limpar
+                  </button>
+                </div>
+              </div> 
             </div>
           </div>
           <div class="row">
+              <a class="waves-effect waves-light btn right">
+                  <i class="material-icons left white-text">add</i>
+                  Abrir Chamado</a>
             <div class="col s12">
               <table class="responsive-table">
                 <thead>
                   <tr>
-                      <th>Número de Protocolo</th>
-                      <th>Funcionário Responsável</th>
+                      <th>Protocolo</th>
+                      <th>Funcionário</th>
                       <th>Status</th>
                       <th>Data de Abertura</th>
                       <th>Data de Fechamento</th>
