@@ -139,6 +139,21 @@ h1{
   color: #e64a19 !important;
 }
 
+.row .input-field textarea:focus {
+  border-bottom: 1px solid #e64a19 !important;
+  box-shadow: 0 1px 0 0 #e64a19 !important
+}
+
+.input-field textarea:focus + label {
+  color: #e64a19 !important;
+}
+
+.section-search input{
+  padding: 5px !important;
+  font-size: 18px !important;
+  width: 90% !important;
+  border: #f4f4f4 3px solid !important;
+}
 
 
 

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <link type="text/css" rel="stylesheet" href="./css/materialize/materialize.min.css"  media="screen,projection"/>
+      <link rel="stylesheet" href="./css/mediaQuery.css">
+      <link rel="stylesheet" href="./css/estilos.css">
+      <link rel="icon" href="./imgs/logo.png">
+      <script src="https://kit.fontawesome.com/f476c5939a.js" crossorigin="anonymous"></script>
+      <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+      <script src="./js/acao.js"></script>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <title>NCEx</title>
+  </head>
+  <body>
+    <!-- inicio navbar -->
+    <div class="navbar-fixed">
+      <nav class="grey darken-3">
+        <div class="container">
+          <div class="nav-wrapper">
+            <!-- titulo -->
+            <a href="#home" id="titulo" class="brand-logo">
+              <i class="fas fa-comment-medical" id="icone"></i>
+              NCEx 
+            </a> 
+            <!-- icone de menu responsivo -->
+            <a href="#" data-target="mobile-nav" class="sidenav-trigger">
+              <i class="material-icons white-text">menu</i>
+            </a>
+            <!-- opções do menu -->
+            <ul class="right hide-on-med-and-down" >
+              <li>
+                <a href="./chamados.html" class="tam14">
+                  <i class="fas fa-cogs tam14"></i>
+                  Chamados
+                </a>
+              </li>
+              <li>
+                <a href="./procedimentos.html" class="tam14">
+                  <i class="fas fa-clipboard-list tam14"></i>
+                  MMKBS
+                </a>
+              </li>
+              <li class="active">
+                <a href="#user" class="dropdown-trigger" data-target='dropdown1'>
+                  Colaborador: <strong>Sillas Vinícius</strong> 
+                  &nbsp;<i class="fas fa-chevron-down tam14"></i>
+                </a>
+
+                <ul id='dropdown1' class='dropdown-content'>
+                  <li>
+                    <a href="#aterarPerfil" style="font-size: 12px;">
+                      Alterar dados do Perfil
+                      <i class="fas fa-edit tam14 center"></i>
+                    </a>            
+                  </li>
+                  <li>
+                    <a href="./login.html">
+                      Sair
+                      <i class="fas fa-sign-out-alt tam14 center"></i>
+                    </a>            
+                  </li>                   
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <!-- fim navbar -->
+    <!-- inicio menu lateral -->
+    <ul class="sidenav" id="mobile-nav">
+      <li>
+        <a class="sidenav-close center" href="#!" style="font-size: 20px; background-color: #212121;">
+          <strong style="color: #e64a19; float: right;">X</strong>
+        </a>
+      </li>
+      <li class="active">
+        <a href="#user" class="dropdown-trigger" data-target='dropdown2'>
+          Colaborador: <strong>Sillas Vinícius</strong> 
+          &nbsp;<i class="fas fa-chevron-down tam14"></i>
+        </a>
+
+        <ul id='dropdown2' class='dropdown-content'>
+          <li>
+            <a href="#aterarPerfil" style="font-size: 12px;">
+              Alterar dados do Perfil
+              <i class="fas fa-edit tam14 center"></i>
+            </a>            
+          </li>
+          <li>
+            <a href="#sair">
+              Sair
+              <i class="fas fa-sign-out-alt tam14 center"></i>
+            </a>            
+          </li>                   
+        </ul>
+      </li>
+      <li>
+        <a href="#chamados">
+          <i class="fas fa-cogs"></i>
+          Chamados
+        </a>
+      </li>
+      <li>
+        <a href="#MMKBS">
+          <i class="fas fa-clipboard-list"></i>
+          MMKBS
+        </a>
+      </li>
+    </ul>
+    <!-- fim menu lateral -->
+     <!-- inicio Section: detalhes Chamado -->
+     <section class="section section-chamados center">
+            <div class="container">
+              <div class="row">
+                <div class="col s12">         
+                 <form action="./chamados.html">
+                  <div id="filtros">
+                    <div class="card-panel grey darken-3">
+                        <h4 class="white-text"><i class="fas fa-eye"></i> Detalhes Chamado</h4><br><br>                      
+                      <div class="row">
+                        <div class="col s8" style="clear:both;">      
+                          <div class="input-field">
+                            <h6 class="white-text left">Protocolo: <strong>1231231</strong></h6><br>
+                          </div>
+                          <div class="input-field">
+                            <h6 class="white-text left">Data de Abertura: <strong>02/11/2019</strong></h6><br>
+                          </div>
+                          <div class="input-field">
+                            <h6 class="white-text left">Data de Fechamento: <strong>---</strong></h6><br>
+                          </div>
+                          <div class="input-field">
+                            <h6 class="white-text left">Produto: <strong>Pipoqueira Pop Time Pip B-02 #78798732</strong></h6><br>
+                          </div>
+                          <div class="input-field">
+                            <h6 class="white-text left">Procedimento MMKBS Utilizado: <strong>#1 - Procedimento....</strong></h6><br>
+                          </div>
+                          <div class="input-field">
+                            <h6 class="white-text left-align">Descrição: <strong>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                Aut, numquam autem. Quos quam velit libero rerum vitae in distinctio nulla commodi. 
+                                Accusamus veritatis consectetur odit eveniet autem pariatur perferendis expedita!
+                            </strong></h6><br>
+                          </div>
+                        </div>
+                        <div class="col s4">
+                          <div class="input-field">
+                            <h6 class="white-text left">Cliente: <strong>Bruno Thales Jesus</strong></h6><br>                  
+                          </div>
+                          <div class="input-field">
+                            <h6 class="white-text left">Funcionário: <strong>Kevin Iago Pires</strong></h6><br>
+                          </div>
+                        </div>
+                      </div>
+                      <button class="btn btn-large waves-effect red darken-2 white-text" type="submit" name="action">
+                          FECHAR CHAMADO
+                      </button>
+                    </form> 
+                    </div>
+                  </div> 
+                </div>
+              </div>
+              </div>
+            </div>
+          </section>
+        <!-- fim Section: Section: detalhes Chamado-->
+    
+    <script type="text/javascript" src="./js/materialize/materialize.min.js"></script>
+  </body>
+</html>

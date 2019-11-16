@@ -30,34 +30,18 @@
             <!-- opções do menu -->
             <ul class="right hide-on-med-and-down" >
               <li>
-                <a href="#operacoes" class="tam14">
-                  <i class="fab fa-buffer tam14"></i>
-                  Operações
-                </a>
-              </li>
-              <li>
-                <a href="#chamados" class="tam14">
+                <a href="./chamados.html" class="tam14">
                   <i class="fas fa-cogs tam14"></i>
                   Chamados
                 </a>
               </li>
               <li>
-                <a href="#produtos" class="tam14">
-                  <i class="fas fa-shopping-bag tam14"></i>
-                  Produtos
-                </a>
-              </li>
-              <li>
-                <a href="#MMKBS" class="tam14">
+                <a href="./procedimentos.html" class="tam14">
                   <i class="fas fa-clipboard-list tam14"></i>
                   MMKBS
                 </a>
               </li>
               <li class="active">
-                  <!-- <div class="chip">
-                      <img src="images/yuna.jpg" alt="Contact Person">
-                      Jane Doe
-                    </div> -->
                 <a href="#user" class="dropdown-trigger" data-target='dropdown1'>
                   Colaborador: <strong>Sillas Vinícius</strong> 
                   &nbsp;<i class="fas fa-chevron-down tam14"></i>
@@ -113,21 +97,9 @@
         </ul>
       </li>
       <li>
-        <a href="#operacoes">
-          <i class="fab fa-buffer"></i>
-          Operações
-        </a>
-      </li>
-      <li>
         <a href="#chamados">
           <i class="fas fa-cogs"></i>
           Chamados
-        </a>
-      </li>
-      <li>
-        <a href="#produtos">
-          <i class="fas fa-shopping-bag"></i>
-          Produtos
         </a>
       </li>
       <li>
@@ -136,19 +108,14 @@
           MMKBS
         </a>
       </li>
-      <li>
-        <a href="#pd">
-          <i class="fas fa-hammer"></i>
-          Projetos e Demandas
-        </a>
-      </li>
     </ul>
     <!-- fim menu lateral -->
     <!-- inicio Section: Listagem de Chamados -->
       <section class="section section-chamados center">
         <div class="container">
           <div class="row">
-            <div class="col s12">         
+            <div class="col s12">  
+              <form action="#">      
               <h4><i class="fas fa-cogs"></i> Chamados</h4><br><br>
               <div id="filtros">
                 <div class="card-panel grey darken-3">
@@ -187,12 +154,13 @@
                   </button>
                   <button class="btn waves-effect grey lighten-4 black-text" type="reset" name="action">Limpar
                   </button>
+                </form> 
                 </div>
               </div> 
             </div>
           </div>
           <div class="row">
-              <a class="waves-effect waves-light btn right">
+              <a href="./abrirChamado.html" class="waves-effect waves-light btn right">
                   <i class="material-icons left white-text">add</i>
                   Abrir Chamado</a>
             <div class="col s12">
@@ -216,7 +184,7 @@
                     <td>02/11/2019</td>
                     <td>---</td>
                     <td>
-                      <a class="btn-floating btn-small waves-effect waves-light blue">
+                      <a class="btn-floating btn-small waves-effect waves-light blue" href="./detalheChamado.html">
                         <i class="fas fa-eye fa-sm white-text tooltipped" data-tooltip="Visualizar" data-position="top"></i>
                       </a>
                       <a class="btn-floating btn-small waves-effect waves-light green">
@@ -234,7 +202,7 @@
                     <td>05/11/2019</td>
                     <td>---</td>
                     <td>
-                      <a class="btn-floating btn-small waves-effect waves-light blue">
+                      <a class="btn-floating btn-small waves-effect waves-light blue" href="./detalheChamado.html">
                         <i class="fas fa-eye fa-sm white-text tooltipped" data-tooltip="Visualizar" data-position="top"></i>
                       </a>
                       <a class="btn-floating btn-small waves-effect waves-light green">
@@ -252,7 +220,7 @@
                     <td>29/10/2019</td>
                     <td>---</td>
                     <td>
-                      <a class="btn-floating btn-small waves-effect waves-light blue">
+                      <a class="btn-floating btn-small waves-effect waves-light blue" href="./detalheChamado.html">
                         <i class="fas fa-eye fa-sm white-text tooltipped" data-tooltip="Visualizar" data-position="top"></i>
                       </a>
                       <a class="btn-floating btn-small waves-effect waves-light green">
@@ -270,7 +238,7 @@
                     <td>12/10/2019</td>
                     <td>03/11/2019</td>
                     <td>
-                      <a class="btn-floating btn-small waves-effect waves-light blue">
+                      <a class="btn-floating btn-small waves-effect waves-light blue" href="./detalheChamado.html">
                         <i class="fas fa-eye fa-sm white-text tooltipped" data-tooltip="Visualizar" data-position="top"></i>
                       </a>
                       <a class="btn-floating btn-small waves-effect waves-light green disabled">
