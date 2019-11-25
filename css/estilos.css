@@ -155,6 +155,15 @@ h1{
   border: #f4f4f4 3px solid !important;
 }
 
+@keyframes neon {
+  to {
+    filter: drop-shadow(0 0 5px white);
+  }
+}
+
+.flash {
+  animation: neon 0.8s alternate infinite ease-in-out;
+}
 
 
 
