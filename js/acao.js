@@ -1,4 +1,11 @@
 $(document).ready(function(){
+
+  $('#iniciarLigacao').show();
+  $('#cancelarLigacao').hide();
+  $('#finalizarContato').hide();
+  $('#salvarContato').hide();
+  $('#descricaoChamadaMarketing').hide();
+
   // menu lateral
   $('.sidenav').sidenav();
   //textarea
@@ -73,4 +80,31 @@ $(document).ready(function(){
       "Produto danificado na entrega...": null,
     },
   });
+  //iniciar ligação
+  $("#iniciarLigacao").click(function(){
+    $('#iniciarLigacao').hide();
+    $('#cancelarLigacao').show();
+    $('#finalizarContato').show();
+    $('#salvarContato').hide();
+  });
+
+  //cancelar Ligacao
+  $("#cancelarLigacao").click(function(){
+    $('#iniciarLigacao').show();
+    $('#cancelarLigacao').hide();
+    $('#finalizarContato').hide();
+    $('#salvarContato').hide();
+  });
+
+  //finalizar Contato
+  $("#finalizarContato").click(function(){
+    $('#iniciarLigacao').hide();
+    $('#cancelarLigacao').hide();
+    $('#finalizarContato').hide();
+    $('#salvarContato').show();
+
+    $('#descricaoChamadaMarketing').show();
+  });
+
+  //salvar Contato
 });

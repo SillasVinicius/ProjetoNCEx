@@ -124,43 +124,39 @@
       </li>
     </ul>
     <!-- fim menu lateral -->
-    <!-- inicio Section: Listagem de Chamados -->
+    <!-- inicio Section: Campanhas De Marketing Realizadas -->
       <section class="section section-chamados center">
         <div class="container">
           <div class="row">
             <div class="col s12">  
               <form action="#">      
-              <h4><i class="fas fa-cogs"></i> Chamados</h4><br><br>
+              <h4><i class="fas fa-phone-volume"></i> Campanhas De Marketing Realizadas</h4><br><br>
               <div id="filtros">
                 <div class="card-panel grey darken-3">
                   <h5 class="white-text">Filtros:</h5>
                   <div class="row">
                     <div class="col s6">
                       <div class="input-field">
-                          <input id="protocolo" type="number" class="validate">
-                          <label for="protocolo">Protocolo</label>
+                        <input id="protocolo" type="number" class="validate">
+                        <label for="protocolo">Protocolo</label>
                       </div>
                       <div class="input-field">
-                        <select>
-                          <option value="" disabled selected>Status</option>
-                          <option value="1">ABERTO</option>
-                          <option value="2">EM ANDAMENTO</option>
-                          <option value="3">FINALIZADO</option>
-                        </select>
-                        <div class="input-field">
-                            <input id="dtaFechamento" type="text" class="datepicker">
-                            <label for="dtaFechamento">Dta. Fechamento</label>
-                        </div>
+                          <input id="dtaLigacao" type="text" class="datepicker">
+                          <label for="dtaLigacao">Dta. Ligação</label>
+                      </div>
+                      <div class="input-field">
+                        <textarea id="textarea" class="materialize-textarea" data-length="400"></textarea>
+                        <label for="textarea">Descrição</label>
                       </div>
                     </div>
                     <div class="col s6">
                       <div class="input-field">
-                          <input id="funcionario" type="text" class="validate">
+                          <input id="funcionario" type="text" class="validate autocompleteFuncionario white-text">
                           <label for="funcionario">Funcionário</label>
                       </div>
                       <div class="input-field">
-                          <input id="dtaAbertura" type="text" class="datepicker">
-                          <label for="dtaAbertura">Dta. Abertura</label>
+                        <input id="cliente" type="text" class="validate autocompleteCliente white-text">
+                        <label for="cliente">Cliente</label>
                       </div>
                     </div>
                   </div>
@@ -174,94 +170,42 @@
             </div>
           </div>
           <div class="row">
-              <a href="./abrirChamado.html" class="waves-effect waves-light btn right">
-                  <i class="material-icons left white-text">add</i>
-                  Abrir Chamado</a>
+              <a href="./campanhaMarketing.html" class="waves-effect waves-light btn right">
+                  <i class="material-icons left white-text">contact_phone</i>
+                  Realizar Ligação</a>
             <div class="col s12">
               <table class="responsive-table">
                 <thead>
                   <tr>
                       <th>Protocolo</th>
                       <th>Funcionário</th>
-                      <th>Status</th>
-                      <th>Data de Abertura</th>
-                      <th>Data de Fechamento</th>
-                      <th>Ações</th>
+                      <th>Cliente</th>
+                      <th>Data da Ligação</th>
+                      <th>Descrição</th>
                   </tr>
                 </thead>
         
                 <tbody>
                   <tr>
                     <td>9903449</td>
-                    <td>Sillas</td>
-                    <td>ABERTO</td>
+                    <td>Kevin Iago Pires</td>
+                    <td>Bruno Thales Jesus</td>
                     <td>02/11/2019</td>
-                    <td>---</td>
-                    <td>
-                      <a class="btn-floating btn-small waves-effect waves-light blue" href="./detalheChamado.html">
-                        <i class="fas fa-eye fa-sm white-text tooltipped" data-tooltip="Visualizar" data-position="top"></i>
-                      </a>
-                      <a class="btn-floating btn-small waves-effect waves-light green">
-                        <i class="fas fa-share white-text tooltipped" data-tooltip="Encaminhar" data-position="top"></i>
-                      </a>
-                      <a class="btn-floating btn-small waves-effect waves-light grey">
-                        <i class="fas fa-pen white-text tooltipped" data-tooltip="Editar" data-position="top"></i>
-                      </a>
-                    </td>
+                    <td>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus id inventore vero reiciendis mollitia. Consequatur eum deserunt natus labore ab facere modi sapiente debitis culpa alias dolorum temporibus, reiciendis necessitatibus.</td>
                   </tr>
                   <tr>
                     <td>8615454</td>
-                    <td>Renata</td>
-                    <td>EM ATENDIMENTO</td>
+                    <td>Oliver Edson Luís Nogueira</td>
+                    <td>Benício Geraldo Severino Rocha</td>
                     <td>05/11/2019</td>
-                    <td>---</td>
-                    <td>
-                      <a class="btn-floating btn-small waves-effect waves-light blue" href="./detalheChamado.html">
-                        <i class="fas fa-eye fa-sm white-text tooltipped" data-tooltip="Visualizar" data-position="top"></i>
-                      </a>
-                      <a class="btn-floating btn-small waves-effect waves-light green">
-                        <i class="fas fa-share white-text tooltipped" data-tooltip="Encaminhar" data-position="top"></i>
-                      </a>
-                      <a class="btn-floating btn-small waves-effect waves-light grey">
-                        <i class="fas fa-pen white-text tooltipped" data-tooltip="Editar" data-position="top"></i>
-                      </a>
-                    </td>
+                    <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque explicabo eveniet quod odit unde! Illum, sint est vitae optio rem doloremque modi nisi dolore laboriosam ex, tempora molestias corrupti ab.</td>
                   </tr>
                   <tr>
                     <td>5116502</td>
-                    <td>Paulo</td>
-                    <td>ABERTO</td>
+                    <td>Julio Nelson Bento Oliveira</td>
+                    <td>João Jorge Yago da Rosa</td>
                     <td>29/10/2019</td>
-                    <td>---</td>
-                    <td>
-                      <a class="btn-floating btn-small waves-effect waves-light blue" href="./detalheChamado.html">
-                        <i class="fas fa-eye fa-sm white-text tooltipped" data-tooltip="Visualizar" data-position="top"></i>
-                      </a>
-                      <a class="btn-floating btn-small waves-effect waves-light green">
-                        <i class="fas fa-share white-text tooltipped" data-tooltip="Encaminhar" data-position="top"></i>
-                      </a>
-                      <a class="btn-floating btn-small waves-effect waves-light grey">
-                        <i class="fas fa-pen white-text tooltipped" data-tooltip="Editar" data-position="top"></i>
-                      </a>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>1890482</td>
-                    <td>Rafael</td>
-                    <td>FINALIZADO</td>
-                    <td>12/10/2019</td>
-                    <td>03/11/2019</td>
-                    <td>
-                      <a class="btn-floating btn-small waves-effect waves-light blue" href="./detalheChamado.html">
-                        <i class="fas fa-eye fa-sm white-text tooltipped" data-tooltip="Visualizar" data-position="top"></i>
-                      </a>
-                      <a class="btn-floating btn-small waves-effect waves-light green disabled">
-                        <i class="fas fa-share white-text tooltipped" data-tooltip="Encaminhar" data-position="top"></i>
-                      </a>
-                      <a class="btn-floating btn-small waves-effect waves-light grey disabled">
-                        <i class="fas fa-pen white-text tooltipped" data-tooltip="Editar" data-position="top"></i>
-                      </a>
-                    </td>
+                    <td>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis culpa explicabo fuga voluptatibus voluptatum possimus quibusdam in laboriosam impedit saepe quam, a mollitia consequuntur quaerat expedita minima, quis et assumenda?</td>
                   </tr>
                 </tbody>
               </table>
@@ -269,7 +213,7 @@
           </div>
         </div>
       </section>
-    <!-- fim Section: Section: Listagem de Chamados-->
+    <!-- fim Section: Section: Campanhas De Marketing Realizadas-->
 
     <script type="text/javascript" src="./js/materialize/materialize.min.js"></script>
   </body>

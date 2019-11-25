@@ -37,7 +37,7 @@
                 </a>
               </li>
               <li>
-                <a href="./campanhaMarketing.html" class="tam14 flash">
+                <a href="./listaCampanhaMarketing.html" class="tam14 flash">
                   <i class="fas fa-phone-volume tam14"></i>
                   Campanha 
                   <span class="new badge" data-badge-caption="Cliente(s)">15</span>
@@ -111,7 +111,7 @@
         </a>
       </li>
       <li>
-        <a href="./campanhaMarketing.html" class="tam14 flash">
+        <a href="./listaCampanhaMarketing.html" class="tam14 flash">
           <i class="fas fa-phone-volume tam14"></i>
           Campanha 
           <span class="new badge" data-badge-caption="Cliente(s)">15</span>
@@ -125,6 +125,57 @@
       </li>
     </ul>
     <!-- fim menu lateral -->
+     <!-- inicio Section: Campanha de Marketing -->
+     <section class="section section-chamados center">
+      <div class="container">
+        <div class="row">
+          <div class="col s12">         
+           <form action="./listaCampanhaMarketing.html">
+            <div id="filtros">
+              <div class="card-panel grey darken-3">
+                <h4 class="white-text"><i class="fas fa-phone-volume"></i> Campanha de Marketing</h4><br><br>                                            
+                <div class="row">
+                  <div class="col s12" style="clear:both;">      
+                    <div class="input-field">
+                      <h6 class="white-text left-align"> <strong>Texto Marketing:</strong> <br><br> Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                        Atque harum, dicta voluptates, repellat magnam rem sit a, corrupti accusantium eaque voluptatibus earum! 
+                        Maiores rem iste sit ad aspernatur nobis assumenda.</h6><br>
+                    </div>
+                    <div class="input-field">
+                      <select>
+                        <option value="" disabled selected>Selecionar Cliente</option>
+                        <option value="1">Bruno Thales Jesus - 991.430.002-23</option>
+                        <option value="2">Benício Geraldo Severino Rocha - 712.842.476-86</option>
+                        <option value="3">João Jorge Yago da Rosa - 520.928.866-81</option>
+                      </select>                     
+                    </div><br>
+                    <div class="input-field" id="descricaoChamadaMarketing">
+                      <textarea id="textarea" class="materialize-textarea" data-length="400"></textarea>
+                      <label for="textarea">Descrição</label>
+                    </div>                  
+                  </div>
+                </div>
+                <button class="btn waves-effect waves-light white-text" type="button" name="action" id="iniciarLigacao">
+                  Iniciar Ligação
+                </button>
+                <button class="btn waves-effect red darken-2 white-text" type="button" name="action" id="cancelarLigacao">
+                  Cancelar Ligação
+                </button>
+                <button class="btn waves-effect grey lighten-4 black-text" type="button" name="action" id="finalizarContato">
+                  Finalizar Ligação
+                </button>
+                <button class="btn waves-effect blue darken-4 white-text" type="submit" name="action" id="salvarContato">
+                  Salvar Ligação
+                </button>
+              </form> 
+              </div>
+            </div> 
+          </div>
+        </div>
+        </div>
+      </div>
+    </section>
+  <!-- fim Section: Section: Campanha de Marketing-->
     
     <script type="text/javascript" src="./js/materialize/materialize.min.js"></script>
   </body>
