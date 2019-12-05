@@ -165,8 +165,53 @@ h1{
   animation: neon 0.8s alternate infinite ease-in-out;
 }
 
+/* toast */
+.toast {
+  border-radius: 2px;
+  top: 35px;
+  width: auto;
+  clear: both;
+  margin-top: 10px;
+  position: relative;
+  max-width:100%;
+  height: auto;
+  line-height: 1.5em;
+  word-break: keep-all;
+  background-color: #47cf73;
+  padding: 10px 25px;
+  font-size: 1.1rem;
+  font-weight: 300;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 
+@media only screen and (max-width: 600px) {
+  #toast-container {
+      min-width: 100%;
+      bottom: 0%
+  }
+}
+@media only screen and (min-width: 601px) and (max-width: 992px) {
+  #toast-container {
+      left: 5%;
+      bottom: 7%;
+      max-width: 90%
+  }
+}
+@media only screen and (min-width: 993px) {
+  #toast-container {
+      top: 10%;
+      right: 7%;
+      max-width: 86%
+  }
+}
 
+/* modal */
+#modal {
+  transform: translateY(-50%) !important;
+}
 
 
 

@@ -106,5 +106,11 @@ $(document).ready(function(){
     $('#descricaoChamadaMarketing').show();
   });
 
-  //salvar Contato
+  //botão sim alerta tela de procedimentos
+  $("#btnSim").click(function(){
+    M.toast({html: 'Parabéns! Bom Trabalho!', classes: 'rounded'});
+  });
+
+  //botão não modal tela de procedimentos
+  $('.modal').modal();
 });
